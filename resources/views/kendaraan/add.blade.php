@@ -16,13 +16,13 @@
                     <select name="type" class="form-control">
                         <option value="">-=Pilih Model=-</option>
                         @foreach ($types as $type)
-                            <option value="{{ $type->id }}">{{ $type->tipe }}</option>
+                            <option value="{{ $type->id }}">{{ $type->type }}</option>
                         @endforeach
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="merk">Merk</label>
-                    <select name=""  class="form-control">
+                    <label for="">Merk</label>
+                    <select name="merk"  class="form-control">
                         <option value="">-=Pilih Merk=-</option>
                         @foreach ($merks as $merk)
                             <option value="{{ $merk->id }}">{{ $merk->merk }}</option>

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="website icon" type="png" href="{{ asset('img/icon.png')}}">
+    <link rel="stylesheet" href="{{ asset('select2/select2.min.css') }}">
     <title>Document</title>
 </head>
 <body>
@@ -29,3 +30,6 @@
 </body>
 </html>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('select2/jquery.js') }}"></script>
+<script src="{{ asset('select2/select2.min.js') }}"></script>
+@yield('script')

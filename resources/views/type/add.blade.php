@@ -9,7 +9,7 @@
                 @csrf
                 <div class="form-group">
                     <label for="Model"></label>
-                    <input type="text" name="tipe" id="tipe" placeholder="Model" class="form-control">
+                    <input type="text" name="type" id="type" placeholder="Model" class="form-control">
                 </div>
                 <br>
                 <div class="from-group">

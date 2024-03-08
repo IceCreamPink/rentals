@@ -21,7 +21,7 @@
                     @foreach ($types as $type)
                     <tr>
                         <td>{{ $no++ }}</td>
-                        <td>{{ $type->tipe }}</td>
+                        <td>{{ $type->type }}</td>
                         <td>
                             <a href="{{ route('type.edit', [$type->id]) }}" class="btn btn-warning">Edit</a>
                         </td>

@@ -11,7 +11,7 @@
             @method('PUT')
             <div class="form-group">
                 <label for="">Model</label>
-                <input type="text" name="tipe" id="tipe" value="{{ $type->tipe }}" class="form-control">
+                <input type="text" name="type" id="type" value="{{ $type->type }}" class="form-control">
             </div>
             <br>
             <div class="form-group">

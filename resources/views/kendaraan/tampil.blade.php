@@ -15,6 +15,7 @@
                         <th>Plat No</th>
                         <th>Tahun</th>
                         <th>Status</th>
+                        <th>Tarif</th>
                         <th>Edit</th>
                         <th>Hapus</th>
                     </tr>
@@ -38,7 +39,7 @@
                             <a href="{{ route('kendaraan.edit', $kendaraan->id) }}" class="btn btn-warning">Edit</a>
                         </td>
                         <td>
-                            <a href="{{ route('kendaraan.show', $kendaraan->id) }}" class="btn btn-danger">Hapus</a>
+                            <a href="{{ route('kendaraan.show', $kendaraan->id) }}" class="btn btn-danger" onclick="return confirm('yakin kah?')">Hapus</a>
                         </td>
                     </tr>
                 @endforeach

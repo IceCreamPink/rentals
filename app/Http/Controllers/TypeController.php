@@ -31,9 +31,9 @@ class TypeController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate(['tipe'=>'required']);
+        $request->validate(['type'=>'required']);
         $data=[
-            'tipe'=>$request->tipe
+            'type'=>$request->type
         ];
         type::create($data);
         return redirect('type');
@@ -61,9 +61,9 @@ class TypeController extends Controller
      */
     public function update(Request $request, Type $type)
     {
-        $request->validate(['tipe'=>'required']);
+        $request->validate(['type'=>'required']);
         $data=[
-            'tipe'=>$request->tipe
+            'type'=>$request->type
         ];
         Type::where('id', $type->id)->update($data);
         return redirect('type');
